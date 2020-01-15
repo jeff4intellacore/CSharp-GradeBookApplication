@@ -23,7 +23,7 @@ namespace GradeBook.GradeBooks
             }
 
             Double interval = Students.Count * .2;
-            int myPosition = Students.Where(m => m.AverageGrade > averageGrade).Count();
+            int myPosition = Students.Where(m => m.AverageGrade > averageGrade).Count() + 1;
 
             if (myPosition <= Math.Round(interval * 1))
             {
